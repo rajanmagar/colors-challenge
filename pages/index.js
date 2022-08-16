@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Swatch from './components/Swatch';
-import useParser from './util';
+import useParser from '../util';
 import style from '../styles/Home.module.css';
 
 const Index = () => {
@@ -25,9 +25,9 @@ const Index = () => {
         <h1>Color Generator</h1>
       </div>
       <main className={style.main}>
-        {colors?.map(({ type, values }) => {
+        {colors?.map(({ type, values }, index) => {
           const colorParse = useParser[type];
-          return <Swatch color={colorParse(values)} />
+          return <Swatch color={colorParse(values)} key={index} />
         })}
       </main>
       <div className={style.buttonContainer}>

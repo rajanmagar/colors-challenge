@@ -1,4 +1,4 @@
-import Specs from '../server';
+import Specs from '../../server';
 
 const generator = (maxColor = 5) => {
   const colors = [];

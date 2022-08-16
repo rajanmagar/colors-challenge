@@ -1,7 +1,5 @@
 import { getRandomNumber } from '../util';
 
-
-
 const HSL = () => {
   return {
     type: 'hsl',
