@@ -14,6 +14,6 @@ const generator = (maxColor = 5) => {
 }
 
 export default function generateColors(req, res) {
-  const colors = generator();;
+  const colors = generator();
   res.status(200).json(colors);
 }
