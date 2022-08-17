@@ -10,3 +10,11 @@ your work and add new elements to it.
 - Build a back-end to generate color swatches via an API in various color spaces.
 - Build a front-end to consume the back-end API and render the color swatches.
 - Maintain a focus on extensibility in your code.
+
+## Deployment
+Tried with gatsby pages but didn't worked well. Hence moved to vercel as they are supporting nextjs projects natively. 
+```
+npm run build
+npm run epxort
+```
+Here is the end [result](https://colors-challenge-eta.vercel.app/) :+1:.
